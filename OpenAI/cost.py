@@ -14,9 +14,9 @@ model_openai = "gpt-4o"
 # Ya no es necesario utilizar la variable del API key como parámetro en la clase OpenAI. Internamente lo de la variable de entorno
 client = OpenAI()
 
-# Se define una función con 2 argumentos: uso (input/output) y el modelo.
+# Se define una función de cálculo de tarifa con 2 argumentos: uso (input/output) y el modelo.
 def openai_api_calculate_cost(usage, model):
-
+    # Se define un diccionario de clasificación
     pricing = {
         'gpt-3.5-turbo-0125': {
             'prompt': 0.0005,
@@ -65,9 +65,10 @@ print(result)
 
 # Se declara un array para capturar la respuesta
 data_usage = {
-    "completion_tokens" : response.usage.completion_tokens, 
-    "prompt_tokens" :  response.usage.prompt_tokens,
-    "total_tokens" : response.usage.total_tokens
+    "completion_tokens" : response.usage.completion_tokens, # número de tokens usados en la salida
+    "prompt_tokens" :  response.usage.prompt_tokens, # número de tokens usados en el prompt (entrada)
+    "total_tokens" : response.usage.total_tokens # número de tokens de entrada y salida
 }
 
+# Se invoca a la función de cálculo de la tarifa.
 openai_api_calculate_cost(data_usage, model_openai)

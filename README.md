@@ -6,7 +6,7 @@ Codespaces es un entorno de desarrollo integrado en la nube (basado en VS Code) 
 
 Crear un Codespace, clic en Code -> Codespace -> Create codespace on master.
 
-![image](https://github.com/luisgradossalinas/curso-ia-generativa-05/assets/2066453/9f0f2cc4-1be3-4acf-a134-481b44052a2c)
+![image]([https://github.com/AIbanezWA/AI-Introduction/blob/main/Create%20codespace.png)
 
 En el terminal de Codespaces ejecuta este comando para instalar las librerías necesarias para el curso:
 

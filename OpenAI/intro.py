@@ -1,4 +1,4 @@
-# Demo #1: Realizando un prompt sencillo a chatGPT
+# DEMO #1: Realizando un prompt sencillo a chatGPT
 
 from openai import OpenAI
 import getpass #paquete para ofuscar (tipo de cifrado) los valores de las variables en tiempo de ejecución.

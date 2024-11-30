@@ -1,3 +1,5 @@
+# Demo 1: Realizando un prompt sencillo a chatGPT
+
 from openai import OpenAI
 import getpass #paquete para ofuscar (tipo de cifrado) los valores de las variables en tiempo de ejecución.
 
@@ -19,7 +21,7 @@ message_input = {
     ]
 }
 
-#Invoca al modelo de mensajes (chat) de OpenAI  => para imagenes (image)
+#Invoca al modelo de mensajes (chatGPT) de OpenAI  => para imagenes (image)
 response = client.chat.completions.create(
     model = model,
     messages = message_input['messages'],

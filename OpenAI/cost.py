@@ -1,5 +1,7 @@
 # DEMO #2: Calculando las tarifas por tokens de entrada y salida en chatGPT
-# Reference: https://openai.com/pricing
+# Reference: 
+#    https://openai.com/pricing
+#    https://tokenizer.streamlit.app/
 
 
 from openai import OpenAI
